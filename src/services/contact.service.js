@@ -6,7 +6,7 @@ async function fetchData(url, options = {}) {
   if (!response.ok) {
     throw new Error(`Erreur HTTP: ${response.status}`);
   }
-  return await response.json();
+  return await response.json(); 
 }
 
 function getCurrentUser() {
